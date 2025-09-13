@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <style>
+    /* ====== Reset ====== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #f1f5f9;
+      line-height: 1.6;
+    }
+
+    
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* ====== Navbar ====== */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 5%;
+      background: rgba(15, 23, 42, 0.9);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav h1 {
+      font-size: 1.5rem;
+      color: #38bdf8;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 1rem;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+
+    /* ====== Hero Section ====== */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(to right, #0f172a, #1e293b);
+      padding: 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero h2 span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      background: #38bdf8;
+      padding: 0.7rem 1.5rem;
+      border-radius: 5px;
+      color: #0f172a;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+      color: #fff;
+    }
+
+    /* ====== Section ====== */
+    section {
+      padding: 5rem 10%;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #38bdf8;
+    }
+
+    /* ====== About ====== */
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+
+    .about img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* ====== Skills ====== */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .skill {
+      background: #1e293b;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .skill:hover {
+      transform: scale(1.05);
+      background: #38bdf8;
+      color: #0f172a;
+    }
+
+    /* ====== Projects ====== */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project {
+      background: #1e293b;
+      padding: 1.5rem;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    /* ====== Contact ====== */
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.7rem 1.2rem;
+      border-radius: 5px;
+      background: #38bdf8;
+      color: #0f172a;
+      font-weight: bold;
+    }
+
+    .contact a:hover {
+      background: #0ea5e9;
+      color: #fff;
+    }
+
+    /* ====== Footer ====== */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #1e293b;
+      margin-top: 2rem;
+    }
+
+    @media(max-width: 768px) {
+      .about {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>MyPortfolio</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h2>Hi, I'm <span>Narasimha Naidu Meda</span></h2>
+    <p>A passionate 3rd-year B.Tech Student specializing in Web Development & Programming and with some photography skills.</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+      <img src="myimage.jpg" alt="profile">
+      <div>
+        <p>Hello! I’m a B.Tech 3rd-year student with skills in HTML, CSS, JavaScript, Python, and more.  
+           I love building modern websites and solving real-world problems with technology , and i also 
+          know about photo editing and passionate about photography</p>
+          <br
+          <h2>Skills:</h2>
+         <div class="skills">
+          <div class="skill">HTML,CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">Python</div>
+          <div class="skill">C ,C++</div>
+          <div class="skill">Java</div>
+          <div class="skill">photography</div>
+          <div class="skill">Editing</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>A web application for E-Commerce (like flipkart).</p>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>Mini project built using Python and Flask.</p>
+      </div>
+      <div class="project">
+        <h3>Project 3</h3>
+        <p>Portfolio website using HTML, CSS, and JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact">
+      <a href="mailto:narasimhanaidu7777@gmail.com">Email Me</a>
+      <a href="https://www.linkedin.com/in/narasimha-naidu-meda-6a48692b9/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/narasimhanaidu777" target="_blank">GitHub</a>
+      <a href="https://www.instagram.com/narasimha__788/">instagram</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Your Name | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Small animation effect for navbar
+    window.addEventListener("scroll", function(){
+      let nav = document.querySelector("nav");
+      nav.classList.toggle("sticky", window.scrollY > 50);
+    });
+  </script>
+</body>
+</html>
